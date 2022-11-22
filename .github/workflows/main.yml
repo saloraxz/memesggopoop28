@@ -31,7 +31,11 @@ jobs:
           github_user_name: memesggopoop28
           # <PATH OF THE GENERATED SVG FILE>
           svg_out_path: dist/github-contribution-grid-snake.svg
+      
+      - name: generate-snake-game-from-github-contribution-grid
+        uses: Platane/snk@v2.1.0
 
+      
       # push the content of <build_dir> to a branch
       # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
       - name: push github-contribution-grid-snake.svg to the output branch
