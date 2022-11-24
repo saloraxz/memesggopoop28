@@ -1,1 +1,21 @@
+name: generate things
 
+on:
+  # run anytime
+  workflow_dispatch:
+  
+  # push onto the main branch
+  push:
+    branches:
+      - master
+  
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      # generate things
+      - name: generate things
+        uses: 
