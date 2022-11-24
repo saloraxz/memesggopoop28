@@ -16,6 +16,5 @@ jobs:
     timeout-minutes: 10
     
     steps:
-      # generate things
-      - name: generate things
-        uses: 
+      - name: Cache
+        uses: actions/cache@v3.0.11
